@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>レトロなゲーム</title>
+    <style>
+        /* 全体の基本設定 - ターゲットサイトのクリーンなスタイル */
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* ヘッダー - サイト特有の青色とアイコンの雰囲気 */
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        header h1::before {
+            content: "🎮"; /* アイコンの代わり */
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        /* ゲームカードのセクション */
+        .game-card {
+            background: white;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #007bff;
+            font-size: 1.25rem;
+            border-left: 5px solid #007bff;
+            padding-left: 15px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        p.description {
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        /* ボタン - ターゲットサイトの「地図を表示する」風のスタイル */
+        .btn {
+            display: inline-block;
+            background: linear-gradient(to bottom, #007bff 0%, #0056b3 100%);
+            color: white;
+            padding: 10px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: opacity 0.2s;
+            margin-bottom: 15px;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        /* 引用・リンク情報のスタイル */
+        .source-info {
+            background-color: #f1f3f5;
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: #666;
+            border-left: 3px solid #ced4da;
+        }
+
+        .source-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .source-info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 10px;
+            color: #888;
+            font-size: 0.8rem;
+            border-top: 1px solid #dee2e6;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>レトロなゲーム風</h1>
+</header>
+
+<div class="container">
+    
+    <section class="game-card">
+        <h2>潜水艦ゲーム（サウンドなし）</h2>
+        <p class="description">
+            駆逐艦を操作してバナナ（爆雷）を投下し、潜水艦が放つイチゴ（魚雷）を回避しながら戦う、アクションゲームです。
+        </p>
+        <a href="https://hmc48.github.io/hgame_submarine01/" class="btn" target="_blank">ゲームを開く</a>
+        <div class="source-info">
+            引用元：プログラミングとゲームの杜 GreenOwl (<a href="https://www.greenowl5.com/gprogram/index.html" target="_blank">https://www.greenowl5.com/gprogram/index.html</a>)<br>
+            ※ゲームは公開されているサンプルコードを参考に改変して作成しています。原作者および引用元サイトに感謝します。
+        </div>
+    </section>
+
+    <section class="game-card">
+        <h2>ブロック崩し（サウンドなし）</h2>
+        <p class="description">
+            ブロック崩しです。パドルを動かしてボールを打ち返し、すべてのブロックを消しましょう。
+        </p>
+        <a href="https://hmc48.github.io/hgame_breaking_blocks01/" class="btn" target="_blank">ゲームを開く</a>
+        <div class="source-info">
+            引用元：プログラミングとゲームの杜 GreenOwl (<a href="https://www.greenowl5.com/gprogram/index.html" target="_blank">https://www.greenowl5.com/gprogram/index.html</a>)<br>
+            ※ゲームは公開されているサンプルコードを参考に改変して作成しています。原作者および引用元サイトに感謝します。
+        </div>
+    </section>
+
+    <section class="game-card">
+        <h2>シューティングゲーム（サウンドなし）</h2>
+        <p class="description">
+            注射器ビームでウイルス等を撃退！上空には救急車も走るシューティングゲームです。
+        </p>
+        <a href="https://hmc48.github.io/hgame_syu01/" class="btn" target="_blank">ゲームを開く</a>
+        <div class="source-info">
+            引用元：Hatena Blog 珈琲焙煎者の観察  Pythonでのプログラムの最初。 (<a href="https://manuke.hateblo.jp/entry/2019/12/12/210236" target="_blank">https://manuke.hateblo.jp/entry/2019/12/12/210236</a>)<br>
+            ※ゲームは公開されているサンプルコードを参考に改変して作成しています。原作者および引用元サイトに感謝します。 
+        </div>
+    </section>
+
+    <footer>
+        レトロなゲーム風 - 作成者:Mana48FanClub
+    </footer>
+</div>
+
+</body>
+</html>
